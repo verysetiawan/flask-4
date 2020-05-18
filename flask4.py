@@ -1,10 +1,12 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, session
 
 app = Flask(__name__)
+app.config["SECRET_KEY"] = "IniSecretKeyKu2020"
+
 
 @app.route("/")
-def hello():
-    return "hello world!!!"
+def index():
+    return render_template ("index.html")
 
 if __name__ == "__main__":
-    app.run (host='0.0.0.0', debug=True)
+    app.run (host='0.0.0.0', debug=True, port=5001)
