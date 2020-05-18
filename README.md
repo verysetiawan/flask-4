@@ -4,3 +4,4 @@ Belajar Flask Part 4
 2. url_for
 3. Redirect
 4. Bootsrap
+Menambahkan Bootstrap
